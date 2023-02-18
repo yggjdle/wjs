@@ -2,11 +2,11 @@
     <a-layout class="layout">
         <a-layout-header>
             <!-- <div class="logoname">
-                    <img src="@/assets/image/favicon.jpg" alt="" style="vertical-align: text-bottom" />
-                    <span style="font-size: 18px; font-weight: 700; margin-left: 6px">
-                        福建福州万卷书寄宿自习中心【官网】
-                    </span>
-                </div> -->
+                                        <img src="@/assets/image/favicon.jpg" alt="" style="vertical-align: text-bottom" />
+                                        <span style="font-size: 18px; font-weight: 700; margin-left: 6px">
+                                            福建福州万卷书寄宿自习中心【官网】
+                                        </span>
+                                    </div> -->
             <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="horizontal" :style="{ lineHeight: '64px' }">
                 <a-menu-item key="1">nav 1</a-menu-item>
                 <a-menu-item key="2">nav 2</a-menu-item>
@@ -18,7 +18,12 @@
             <div :style="{ background: '#fff', padding: '24px', minHeight: '280px' }">Content</div>
         </a-layout-content>
         <a-layout-footer style="text-align: center">
-            Ant Design ©2018 Created by Ant UED
+            版权所有 ©2023 万卷书寄宿自习基地<br>
+            <a target="_blank" href="https://beian.miit.gov.cn">备案号：闽ICP备2022000165号-1</a>
+            <a target="_blank" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35010402351326">
+                <img src="../assets/image/beian.png">
+                <p>闽公网安备 35010402351326号</p>
+            </a>
         </a-layout-footer>
     </a-layout>
 </template>
