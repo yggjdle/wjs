@@ -1,5 +1,9 @@
 /* eslint-disable comma-dangle */
-import { createRouter, createWebHistory } from 'vue-router';
+import {
+    createRouter,
+    createWebHistory,
+    createWebHashHistory,
+} from 'vue-router';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 
@@ -16,8 +20,8 @@ routerContext.keys().forEach((route) => {
     routes = [...routes, ...(routerModule.default || routerModule)];
 });
 const router = createRouter({
-    history: createWebHistory(), // history 模式
-    // history: createWebHashHistory(), // hash 模式
+    // history: createWebHistory(), // history 模式
+    history: createWebHashHistory(), // hash 模式
     routes,
 });
 NProgress.configure({ showSpinner: false });

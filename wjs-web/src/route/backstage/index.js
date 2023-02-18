@@ -14,6 +14,27 @@ export default [
                 // redirect: { name: 'check' },
                 component: () => import('@/components/home/homeIndex.vue'),
             },
+            {
+                name: 'around',
+                path: '/around',
+                // meta: { title: '首页', icon: 'home' },
+                // redirect: { name: 'check' },
+                component: () => import('@/components/home/around.vue'),
+            },
+            {
+                name: 'dom',
+                path: '/dom',
+                // meta: { title: '首页', icon: 'home' },
+                // redirect: { name: 'check' },
+                component: () => import('@/components/home/dom.vue'),
+            },
+            {
+                name: 'concat',
+                path: '/concat',
+                // meta: { title: '首页', icon: 'home' },
+                // redirect: { name: 'check' },
+                component: () => import('@/components/home/concat.vue'),
+            },
         ],
     },
     // {
