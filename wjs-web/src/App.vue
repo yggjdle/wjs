@@ -1,17 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="content">
+    <a-config-provider :locale="zhCN">
+      <router-view class="router"></router-view>
+    </a-config-provider>
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+// 汉化
+import zhCN from 'ant-design-vue/es/locale/zh_CN';
 </script>
 
 <style>
